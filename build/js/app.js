@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _sayHello = __webpack_require__(/*! ./lib/sayHello.js */ \"./lib/sayHello.js\");\n\nvar _sayHello2 = _interopRequireDefault(_sayHello);\n\n__webpack_require__(/*! ./lib/main.js */ \"./lib/main.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _sayHello2.default)();\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzYXlIZWxsbyBmcm9tICcuL2xpYi9zYXlIZWxsby5qcyc7XG5cbnNheUhlbGxvKCk7XG5cblxuaW1wb3J0ICcuL2xpYi9tYWluLmpzJztcblxuXG5cbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBOzs7QUFJQTtBQUNBOzs7QUFKQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./app.js\n");
+eval("\n\nvar _sayHello = __webpack_require__(/*! ./lib/sayHello.js */ \"./lib/sayHello.js\");\n\nvar _sayHello2 = _interopRequireDefault(_sayHello);\n\n__webpack_require__(/*! ./lib/main.js */ \"./lib/main.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _sayHello2.default)();\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzYXlIZWxsbyBmcm9tICcuL2xpYi9zYXlIZWxsby5qcyc7XG5cbnNheUhlbGxvKCk7XG5cbmltcG9ydCAnLi9saWIvbWFpbi5qcyc7XG5cblxuXG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTs7O0FBR0E7QUFDQTs7O0FBSEEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./app.js\n");
 
 /***/ }),
 
