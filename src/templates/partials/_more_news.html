@@ -1,0 +1,16 @@
+<section class="more_news">
+	<ul class="news_list">
+		{% for key in data.news %}
+			<li class="news_list__item">
+				<figure class="news_list__item__img">
+					<img class="news_list__item__img--size" src="{{ key.img }}">
+				</figure>
+				<a class="news_list__item__link">{{key.link}}</a>
+				<p class="news_list__item__description">{{key.description}}</p>
+				<figure class="news_list__item__coments">
+					<img class="news_list__item__coments__img" src="img/icon/com.png">
+					<figcaption class="news_list__item__coments__counter">{{key.counter}}</figcaption>
+				</figure>
+			{% endfor %}
+	</ul>
+</section>

@@ -1,0 +1,317 @@
+
+@media screen and (max-width: 1010px)
+	.body
+		padding-top: 0
+
+	.wrap
+		max-width: 1010px
+
+@media screen and (max-width: 500px)
+	.news
+		padding: 3% 0% 2%
+
+//header
+
+@media screen and (max-width: 905px)
+	.header__main__menu
+		padding-left: 0
+
+	.header__main__menu__link--bottom
+		padding: 6px 8px
+		font-size: 15px
+
+@media screen and (max-width: 770px)
+	.header__main__menu__link--bottom
+		padding: 6px 4px
+
+
+@media screen and (max-width: 710px)
+	.header__hotest__button
+		position: static
+
+	.header__main
+		position: relative
+		padding-bottom: 50px
+
+	.header__main__menu--top
+		display: inline-block
+
+	.header__main__menu__link--top
+		display: block
+		padding: 0 5px 7px
+		
+	.header__main__menu--bottom
+		position: absolute
+		bottom: 8%
+		left: 4% 
+
+@media screen and (max-width: 530px)
+
+	.header__main__menu__button
+		position: absolute
+		top: 15px
+		right: 5%
+		border-bottom: 9px double #a6a6a6
+		border-top: 3px solid #a6a6a6
+		height: 15px
+		width: 7%
+
+	.header__main__menu__link--top
+		display: inline-block
+
+	.header__main
+		padding-bottom: 15px
+	
+	.header__main__menu
+		display: block
+
+	.header__main__menu__link--top
+		padding: 10px 10px 5px 0
+
+	.header__main__menu--bottom
+		visibility: hidden
+		opacity: 0
+
+		
+	.header__main__menu--bottom__open
+		position: static
+		visibility: visible
+		opacity: 1
+		animation: menu-header-open 0.3s linear
+		
+	.header__main__menu__link--bottom
+		display: block
+		padding: 4px 0
+		color: white
+
+@keyframes menu-header-open
+	0% 
+		height: 0
+		opacity: 0
+
+	100%
+		height: 200px
+		opacity: 1
+
+//top-news
+@media screen and (max-width: 990px)
+	.top_news__header, 
+	.basic_news__header
+		flex-wrap: wrap
+		
+	.top_news__header__title,
+	.basic_news__header__title
+		font-size: 15px
+
+	.basic_news__header__title, 
+	.basic_news__header__title--first,
+	.top_news__header__title
+		padding: 7px
+
+@media screen and (max-width: 865px)
+	.top_news__header__title,
+	.basic_news__header__title
+		width: 100%
+		&:before
+			display: none
+
+	.top_news__header__description,
+	.basic_news__header__description
+		width: 100%
+		padding: 7px
+
+@media screen and (max-width: 400px)
+	.wrap
+		padding: 0
+
+	.top_news__header__title,
+	.basic_news__header__title,
+	.sidebar__title
+		font-size: 15px
+
+@media screen and (max-width: 400px)
+	.top_news__article
+		padding: 25% 0 15% 3%
+
+	.top_news__article__content
+		width: 70%
+		
+//more-news
+@media screen and (max-width: 930px)
+	.news_list__item__link
+		font-size: 11px
+
+	.news_list__item__description
+		width: 100%
+
+	.news_list__item__coments
+		position: static
+		padding-bottom: 10px
+	
+@media screen and (max-width: 860px)
+	.more_news
+		padding-bottom: 2%
+
+	.news_list
+		flex-wrap: wrap
+		justify-content: space-around
+
+	.news_list__item
+		width: 26%
+		min-width: 150px
+		margin-bottom: 10px
+
+	.news_list__item__img--size
+		max-width: 100%
+		width: 100%
+		margin: 0
+
+@media screen and (max-width: 780px)
+	.news_list
+		justify-content: space-between
+
+	.news_list__item
+		width: 40%
+
+	.news_list__item__link
+		font-size: 15px
+
+@media screen and (max-width: 400px)
+	.news_list__item
+		width: 100%
+		text-align: center
+
+	.news_list__item__img
+		width: 75%
+		margin: 0 auto
+
+@media screen and (max-width: 350px)
+	.news_list__item
+		width: 100%
+
+@media screen and (max-width: 320px)
+	.news_list__item__img
+		width: 100%
+
+//basic-news
+@media screen and (max-width: 940px)
+	.basic_news__article
+		position: relative
+		padding-bottom: 60px
+	
+	.basic_news__article__footer
+		position: absolute
+		flex-wrap: wrap
+		bottom: 10%
+		left: 0
+		width: 100%
+
+@media screen and (max-width: 800px)
+	.basic_news__article__img
+		width: 43%
+
+	.basic_news__article__content
+		width: 55%
+@media screen and (max-width: 675px)
+	.basic_news__article__footer__tags
+		padding: 0 15px
+
+	.basic_news__article__footer__social__share
+		padding-right: 5px
+
+	.basic_news__article__content__description, 
+	.basic_news__article__footer__tags__link, 
+	.basic_news__article__footer__tags__caption, 
+	.basic_news__article__footer__social__share
+		font-size: 11px
+
+@media screen and (max-width: 500px)
+	.basic_news__article
+		padding-left:  10px
+		padding-right: 10px
+
+	.basic_news__article__footer
+		left: 1.5%
+
+
+@media screen and (max-width: 470px)
+	.basic_news__article
+		flex-wrap: wrap
+		padding-bottom: 15px
+
+	.basic_news__article__img
+		width: 50%
+		margin: 0 auto
+
+	.basic_news__article__content
+		width: 100%
+		text-align: justify
+
+	.basic_news__article__footer__coments, 
+	.basic_news__article__footer__tags, 
+	.basic_news__article__footer__social
+		padding-top: 10px
+
+	.basic_news__article__footer
+		position: static
+
+@media screen and (max-width: 353px)
+	.basic_news__article__img
+		width: 75%
+
+	.basic_news__article__footer__tags
+		width: 100%
+		padding: 0
+
+@media screen and (max-width: 300px)
+	.basic_news__article__img
+		width: 90%
+
+//sidebar
+@media screen and (max-width: 930px)
+	.sidebar_list__item__coments
+		position: static
+		padding-bottom: 15px
+
+	.sidebar__list__item__description
+		padding-bottom: 0
+
+@media screen and (max-width: 600px)
+	.news
+		flex-wrap: wrap
+
+	.all_news,
+	.sidebar
+		width: 100%
+
+	.sidebar__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+
+	.sidebar__list__item
+		width: 30%
+		min-width: 120px
+
+
+@media screen and (max-width: 435px)
+	.sidebar__list__item__link
+		font-size: 11px
+
+@media screen and (max-width: 400px)
+	.sidebar__list__item
+		width: 75%
+
+	.sidebar__list__item__link
+		font-size: 15px
+
+@media screen and (max-width: 300px)
+	.sidebar__list__item
+		width: 100%
+
+
+//footer
+@media screen and (max-width: 1010px)
+	.footer
+		padding: 10% 3% 2%
+

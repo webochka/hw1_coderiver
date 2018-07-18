@@ -1,0 +1,24 @@
+<aside class="sidebar">
+  <h1 class="sidebar__title">hottest video</h1>
+  <ul class="sidebar__list">
+    {% for key in data.video %}
+    <li class="sidebar__list__item">
+      <div class="sidebar__list__item__video">
+        <video class="sidebar__list__item__video--size" poster="{{key.poster}}"></video>
+        <button type="button" class="sidebar__list__item__button"></button>
+      </div>
+      <a class="sidebar__list__item__link">{{key.link}}</a>
+      <p class="sidebar__list__item__description">{{key.description}}</p>
+      <figure class="sidebar_list__item__coments">
+        <img class="sidebar_list__item__coments__img" src="img/icon/com.png">
+        <figcaption class="sidebar_list__item__coments__counter">{{key.counter}}</figcaption>
+      </figure>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>
+</main>
+</div>
+<footer class="footer">
+  <p class="footer__info">Layman</p>
+</footer>
