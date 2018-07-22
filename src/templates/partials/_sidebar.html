@@ -1,19 +1,16 @@
-<aside class="sidebar">
-  <h1 class="sidebar__title">hottest video</h1>
-  <ul class="sidebar__list">
+<aside class="media-news">
+  <h1 class="media-news__title">hottest video</h1>
+  <ul class="media-news__list">
     {% for key in data.video %}
-    <li class="sidebar__list__item">
-      <div class="sidebar__list__item__video">
-        <video class="sidebar__list__item__video--size" poster="{{key.poster}}"></video>
-        <button type="button" class="sidebar__list__item__button"></button>
-      </div>
-      <a class="sidebar__list__item__link">{{key.link}}</a>
-      <p class="sidebar__list__item__description">{{key.description}}</p>
-      <figure class="sidebar_list__item__coments">
-        <img class="sidebar_list__item__coments__img" src="img/icon/com.png">
-        <figcaption class="sidebar_list__item__coments__counter">{{key.counter}}</figcaption>
-      </figure>
-    </li>
+      <li class="media-news__item">
+        <div class="video">
+          <video poster="{{key.poster}}"></video>
+          <button type="button" class="video__button"></button>
+        </div>
+        <a class="media-news__link">{{key.link}}</a>
+        <p class="media-news__description">{{key.description}}</p>
+        <p class="media-news__coments coments">{{key.counter}}</p>
+      </li>
     {% endfor %}
   </ul>
 </aside>

@@ -1,56 +1,107 @@
-.more_news
+.more-news
 	padding: 2% 0 6%
 
-.news_list
+.news-list
 	display: flex
 	justify-content: space-between
 
-.news_list__item
+.news-list__item
+	position: relative
 	background: #ffffff
 	box-shadow: 1px 1px 1px rgba(0, 0, 1, 0.14)
 	border-radius: 2px
 	width: 19%
-	padding: 17px 17px 0px
+	padding: 17px 17px 21px
 
-.news_list__item__link
-	font-family: $font-georg
+.news-list__link
+	+georgia-font
 	font-size: 12px
-	font-weight: 400
-	line-height: 18px
 	text-decoration: underline
 	color: #042b38
 	cursor: pointer
 
-.news_list__item__img
+.news-list__img
 	position: relative
 	overflow: hidden
 	padding-bottom: 8.8%
 
-.news_list__item__img--size
+.news-list__img--size
 	max-width: 120%
 	width: 120%
 	margin-left: -15px
 	margin-top: -10px
-
-
-.news_list__item__description
+	
+.news-list__description
 	padding-top: 5%
 	width: 91%
-	font-family: $font-georg
+	+georgia-font
 	font-size: 11px
 	font-style: italic
-	line-height: 18px
 	color: #757575
 
-.news_list__item__coments
-	@extend %news_coments
-	position: relative
-	bottom: 6px
-	left: 4px	
+.news-list__coments
+	position: absolute
+	bottom: 3%
+	right: 7%
+	
+	
++r(930)
+	.news-list__item
+		padding-bottom: 10px
 
-.news_list__item__coments__img
-	width: auto
+	.news-list__link
+		font-size: 11px
 
-.news_list__item__coments__counter
-	@extend %news_counter
-	padding-left: 6px
+	.news-list__description
+		width: 100%
+		padding-bottom: 10px
+
+	.news-list__coments
+		position: static
+		display: inline-block
+	
++r(860)
+	.more-news
+		padding-bottom: 2%
+
+	.news-list
+		flex-wrap: wrap
+		justify-content: space-around
+
+	.news-list__item
+		width: 26%
+		min-width: 150px
+		margin-bottom: 10px
+
+	.news-list__img--size
+		max-width: 100%
+		width: 100%
+		margin: 0
+
++r(780)
+	.news-list
+		justify-content: space-between
+
+	.news-list__item
+		width: 40%
+
+	.news-list__link
+		font-size: 15px
+
++r(400)
+	.news-list__item
+		width: 100%
+		text-align: center
+
+	.news-list__img
+		width: 60%
+		min-width: 200px
+		margin: 0 auto
+
++r(350)
+	.news_list__item
+		width: 100%
+
++r(320)
+	.news_list__img
+		width: 100%

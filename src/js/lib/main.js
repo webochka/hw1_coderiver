@@ -1,9 +1,10 @@
 
-let button = document.querySelector('.header__main__menu__button');
-let menuBottom = document.querySelector('.header__main__menu--bottom');
+let button = document.querySelector('.header-menu__button');
+let menuBottom = document.querySelector('.header-menu--is-hidden');
 
 button.addEventListener('click', (e) => {
-  menuBottom.classList.toggle('header__main__menu--bottom__open');
+  menuBottom.classList.toggle('header-menu--is-visible');
+
 });
 
 

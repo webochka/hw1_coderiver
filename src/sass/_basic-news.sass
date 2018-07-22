@@ -1,80 +1,112 @@
-.basic_news__article
+.basic-news__article
 	display: flex
 	justify-content: space-between
 	padding: 26px 0 31px
 
-.basic_news__header
-	@extend %news__header
-	
-.basic_news__header__title
-	@extend %news__header__title
-
-.basic_news__header__title--first
+.news-header__title--padding
 	padding-right: 37px
 	
-.basic_news__header__description
-	@extend %news__description
-
-.basic_news__article__img
+.basic-news__img
 	width: 23% 
 
-.basic_news__article__content
+.basic-news__content
 	width: 73%
-
-.basic_news__article__content__description,
-.basic_news__article__footer__tags__link,
-.basic_news__article__footer__tags__caption,
-.basic_news__article__footer__social__share
-	font-family: $font-georg
+	+georgia-font
 	font-size: 12px
-	font-weight: 400
-	line-height: 18px
-	
-.basic_news__article__footer
-	display: flex
 
-.basic_news__article__content__description
+.basic-news__text
 	padding: 1.4% 0 3%
 	color: #757575
 
-.basic_news__article__footer__coments
+.basic-news__footer
 	display: flex
-	justify-content: space-between
-	align-items: center
-	width: 7%  
 
-.basic_news__article__footer__img
+.basic-news__icon
 	width: auto
 
-.basic_news__article__footer__counter
-	@extend %news_counter
-	font-size: 13px
-
-.basic_news__article__footer__tags
+.tags-item
 	padding: 0 31px 0 22px
+	color: #989898
 
-.basic_news__article__footer__tags__link
+.basic-news__coments
+	font-size: 12px
+	background-position-y: 2px
+
+.tags-item__caption
+	padding-right: 9px
+
+.tags-item__link
 	font-style: italic
 	text-decoration: underline
 	color: #2b5e5e
+
 	&:after
 		display: inline-block
 		content: ','
 
-.basic_news__article__footer__tags__link:last-child:after
-	display: none
+	&:last-child
+		&:after
+			display: none
 
-.basic_news__article__footer__social
+.social
 	display: flex
 
-.basic_news__article__footer__tags__caption,
-.basic_news__article__footer__social__share
+.social__share
+	padding-right: 15px
 	color: #989898
 
-
-.basic_news__article__footer__social__share
-	padding-right: 15px
-
-.basic_news__article__footer__social__icon
+.social__icon
 	margin-right: 7px
+
+
++r(940)
+	.basic-news__article
+		position: relative
+		padding-bottom: 60px
+	
+	.basic-news__footer
+		position: absolute
+		flex-wrap: wrap
+		bottom: 10%
+		left: 0
+		width: 100%
+
++r(800)
+	.basic-news__img
+		width: 43%
+
+	.basic-news__content
+		width: 55%
+
++r(677)
+	.tags-item
+		padding: 0 15px
+
+	.social__share
+		padding-right: 5px
+
+	.basic-news__article
+		font-size: 11px
+
++r(500)
+	.basic-news__article
+		flex-wrap: wrap
+		padding: 26px 10px 15px
+		
+	.basic-news__img
+		min-width: 220px
+		margin: 0 auto
+
+	.basic-news__content
+		width: 100%
+		text-align: justify
+
+	.basic-news__footer
+		position: static
+		padding-top: 10px
+
++r(390)
+	.tags-item
+		width: 100%
+		padding: 0
 
